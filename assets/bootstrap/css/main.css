@@ -1,0 +1,226 @@
+
+	/* cinza padrao ipb 	#6D6E71 */
+	/* verde padrao ipb 	#005131 rgb(0,81,49)*/
+	/* verde medio 			#335133 */ 
+	/* verde medio-claro 	#015231 */
+	/* verde claro 			#CCDCD5 rgb(204,220,213) rgba(0,81,49, 0.20)*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*::selection {
+	background: #335133;
+	color: #FFF;
+}
+.navbar-header a {
+  position: absolute;
+  display: inline-block;
+  padding: 7.5px 0 0 0;
+  margin-top: auto;
+  white-space: nowrap;
+}
+.navbar-nav .dropdown {
+	cursor: pointer;
+}
+@media (max-width: 767px) {
+	#logo_vilanova { text-align: center; }
+	.soc { padding-top: 10px; }
+	.navbar-header a {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+}
+@media (min-width: 768px) {
+	#navmain {
+		display: flex !important;
+		justify-content: center !important;
+	}
+}
+#copyright {
+	/* background-color: #CCDCD5; */
+	background-color: rgba(0,81,49, 0.23)!important;
+	color:#000;
+}
+#fonteIgreja {
+	color: #6D6E71;
+}
+#home {
+	margin-top: 30px;
+}
+#social {
+	background-color: #F8F8F8;
+	margin-top:10px;
+	padding-top:15px;
+	padding-bottom:30px;
+}
+/* cores do link no mapa do site */
+#mapa {
+	background-color: #CCDCD5; 
+	color: #000;
+}
+#mapa p a {
+	color: #000;
+}
+#mapa p { 
+	cursor:default;
+}
+#mapa a:hover {
+	color: #a7a8a9;
+	cursor:cursor;
+}
+/* inicio modal login */
+.modal {
+	text-align: center;
+}
+.modal:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+/* fim modal login */
+
+#Mateus a{ color:#6D6E71; text-decoration:underline; }
+#Mateus a:hover{ color:#C83539; }
+
+.featured-thumbnail {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.featured-thumbnail img {
+    width: 100%;
+}
+.featured-thumbnail::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.featured-thumbnail:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+.featured-thumbnail img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+.featured-thumbnail:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+.thumbnail a, .thumbnail a:hover {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+.thumbnail a:hover h4, .thumbnail a:hover p {
+	/* cor verde padrao ipb */
+	color: #005131 !important;
+}
+.thumbnail a:hover h4 {
+	text-decoration: underline;
+}
+
+/* configuração dos banners */
+#slides .carousel-inner .item img {
+	margin: auto;
+	height: ;
+}
+
+
+/* configurações do menu com foto*/
+header {
+	background-image: url(../../img/header.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+@media (max-width: 767px) {
+	#menuFoto > div > div {
+		margin-top: 20%;
+	}
+	#menuFoto {
+		background: -webkit-linear-gradien(rgba(51,81,51,0.1) 75%, rgba(51,81,51,0.6));
+		background: -o-linear-gradient(rgba(51,81,51,0.1) 75%, rgba(51,81,51,0.6));
+		background: -moz-linear-gradient(rgba(51,81,51,0.1) 75%, rgba(51,81,51,0.6));
+		background: linear-gradient(rgba(51,81,51,0.1) 65%, rgba(51,81,51,0.6));
+	}
+}
+@media (max-width: 991px) {
+	#menuFoto > div > div {
+		margin-top: 66.5%;
+	}
+}
+@media (max-width: 1199px) {
+	#menuFoto > div > div {
+		margin-top: 66.5%;
+	}
+}
+@media (min-width: 1200px) {
+	#menuFoto > div > div {
+		margin-top: 49%;
+	}
+}
+@media (min-width: 1366px) {
+	#menuFoto > div > div {
+		margin-top: 40.6%;
+	}
+}
+@media (min-width: 1600px) {
+	#menuFoto > div > div {
+		margin-top: 52.2%;
+	}
+}
+@media (min-width: 1680px) {
+	#menuFoto > div > div {
+		margin-top: 64%;
+	}
+}
+@media (min-width: 1920px) {
+	#menuFoto > div > div {
+		margin-top: 66.5%;
+	}
+}
+@media (min-width: 768px) {
+	#menuFoto {
+		background: -webkit-linear-gradien(rgba(51,81,51,0.1) 75%, rgba(51,81,51,0.6));
+		background: -o-linear-gradient(rgba(51,81,51,0.1) 75%, rgba(51,81,51,0.6));
+		background: -moz-linear-gradient(rgba(51,81,51,0.1) 75%, rgba(51,81,51,0.6));
+		background: linear-gradient(rgba(51,81,51,0.1) 75%, rgba(51,81,51,0.6));
+	}
+}
+#menuFoto h1{
+	color:#FFF;
+}
+

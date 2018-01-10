@@ -1,0 +1,426 @@
+orig:
+.navbar {
+  position: relative;
+  min-height: 65px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+mudado:
+.navbar {
+  min-height: 50px;
+  margin-bottom: 15px;
+  /*border: 1px solid transparent;*/
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+  }
+}
+
+=======================================
+
+orig:
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+mudado: 
+.navbar-toggle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+=======================================
+
+orig:
+.navbar-nav {
+  margin: 10.75px -15px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 22px;
+}
+
+mudado:
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+.navbar-nav > li > a {
+  line-height: 20px;
+}
+
+=======================================
+
+orig:
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+  }
+}
+
+mudado:
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+=======================================
+
+orig:
+@media (min-width: 768px) {
+  .navbar .navbar-nav > li > a {
+    padding: 8px 12px;
+  }
+}
+
+mudado:
+@media (min-width: 768px) {
+  .navbar .navbar-nav > li > a {
+    padding: 15px;
+  }
+}
+
+=======================================
+
+orig:
+.navbar-nav > li > a {
+  margin: 12.5px 6px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar-nav > li > a:hover {
+  border: 1px solid #ddd;
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover {
+  border: 1px solid #ddd;
+}
+
+mudado:
+.navbar-nav > li > a {
+  margin: 0px;
+  padding: 15px;
+  /*border: 1px solid transparent;
+  border-radius: 4px;*/
+}
+.navbar-nav > li > a:hover {
+  border: 0px solid #ddd;
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover {
+  border: 0px solid #ddd;
+}
+
+=======================================
+
+orig:
+.navbar-inverse {
+  background-color: #ffffff;
+  border-color: #dddddd;
+}
+.navbar-inverse .navbar-brand {
+  color: #333333;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #333333;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #333333;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #333333;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #333333;
+  background-color:  transparent;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+
+mudado:
+.navbar-inverse {
+  background-color: #CCDCD5;
+  border-color: #FFF;
+}
+.navbar-inverse .navbar-brand {
+  color: #FFF;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #FFF;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #333333;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #6D6E71;
+  background-color: #FFF;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #6D6E71;
+  background-color: #FFF;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #005131;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #EAF1EE;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #005131;
+}
+
+=======================================
+
+orig:
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  border: 1px solid #ddd;
+}
+
+mudado:
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  border: 0px solid #ddd;
+}
+
+=======================================
+
+orig:
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 16px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+mudado:
+.dropdown-menu {
+  padding: 0 0;
+  /*border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;*/
+}
+
+=======================================
+
+orig:
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4582ec;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #4582ec;
+}
+
+mudado:
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+  color: #000;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #6D6E71;
+  background-color: #FFF;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #000;
+  background-color: #CCDCD5;
+}
+
+=======================================
+
+orig:
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: #333333;
+}
+
+mudado:
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #FFF;
+  color: #6D6E71;
+}
+
+=======================================
+
+orig:
+
+
+
+mudado:
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  
+  color: #ffffff;
+  background-color: #003822;
+  border-color: #003822;
+
+}
+
+=======================================
+
+
+
+=======================================
+
+
+
+=======================================
+
+
+
+=======================================
+
+
+
+=======================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
