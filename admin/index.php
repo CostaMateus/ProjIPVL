@@ -101,7 +101,7 @@
 								<div class="alert alert-warning alert-block text-center" role="alert">
 									<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 									<span class="sr-only">Info:</span>
-									Você foi deslogado pois desativou sua conta.
+									Você foi deslogado, pois desativou sua conta.
 								</div>
 						<?php 
 							} 

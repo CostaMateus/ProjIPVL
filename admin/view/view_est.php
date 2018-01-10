@@ -17,6 +17,7 @@
 		$objUser->userDisconnect($_SESSION['idUser'], 2);
 	}
 	
+	
 	//POST para editar dados da conta (nome, login)
 	if (isset($_POST['btnSaveEdition'])) {
 		if (!$objUser->qSelectLogins($_POST['login'], 2)) {
@@ -75,7 +76,7 @@
 	
 	if(isset($_POST['btnSaveStatus'])) {
 		if($objFunc->updateStatusMensagem($_POST)) {
-			header('location: view_dev.php');
+			header('location: view_est.php');
 		}else{
 			echo '<script type="text/javascript">alert("Erro ao salvar modificação!");</script>';
 		}
@@ -84,7 +85,7 @@
 	include(HEADER_TEMPLATE_ADM); 
 ?> 
 
-		<!-- inicio index_adm section -->
+		<!-- inicio quemsomos section -->
 		<section id="index" class="section" style="background-color:#FFF!important;">
 			<div class="container-fluid">
 				<br>
@@ -97,8 +98,8 @@
 					<div class="com-lg-8 col-md-8 visible-lg visible-md hidden-sm hidden-xs">
 						<!--<div class="row">
 						<?php 
-								$i = 0;
-								if ($art = $objFunc->getAllDevocionais()) {
+								$i = 1;
+								if ($art = $objFunc->getAllEstudos()) {
 									foreach($art as $result) { 
 										$i++;
 						?> 	
@@ -141,7 +142,7 @@
 						
 						<div class="row">
 						<?php 	
-								if ($art = $objFunc->getAllMensagens('devocional')) {
+								if ($art = $objFunc->getAllMensagens('estudo')) {
 						?>
 									<table class="table table-striped">
 										<thead>
@@ -194,12 +195,12 @@
 						<?php 	} ?>
 						</div>
 					</div>
-					<div class="com-lg-1 col-md-1 visible-lg visible-md hidden-sm hidden-xs"></div>
+					<div class="com-lg-1 col-md-1 visible-lg visible-md hidden-sm hidden-xs">
 					<!-- fim conteudo_adm -->
 				</div>
 			</div>
 		</section>
-		<!-- fim index_adm section -->
+		<!-- fim admins section -->
 		
 		<!-- inicio modais section -->
 		<section id="modais" class="section">
@@ -238,7 +239,7 @@
 													<button type="submit" class="btn btn-primary btn-block" name="btnSaveStatus" value="">Salvar</button>
 												</div>
 												<div class="col-sm-6">
-													<a class="btn btn-default btn-block" href="view_dev.php" role="button">Cancelar</a>
+													<a class="btn btn-default btn-block" href="view_est.php" role="button">Cancelar</a>
 												</div>
 											</div>
 										</form>
