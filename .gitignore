@@ -1,3 +1,16 @@
+# Pastas nao importantes #
+##########################
+sql/
+assets/base html/
+assets/bootstrap/adds/
+assets/bootstrap/fonts/
+assets/lib/old/
+assets/lib/PHPMailer-master/
+assets/lib/Formulario-de-contato-enviando-para-o-email-em-PHP-master/
+
+
+###### Configs defaults ######
+
 # Compiled source #
 ###################
 *.com
