@@ -499,8 +499,6 @@
 				return "ERRO: " . $e->getMessage();
 			}
 		}
-		
-		// get todos usuarios
 	}
 
 ?>

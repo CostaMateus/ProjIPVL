@@ -7,7 +7,7 @@
 
 	/** caminho no server para o sistema **/ 
 	if (!defined('BASEURL')) 
-		define('BASEURL', '/IPVL/'); //Descomentar para usar em localhost
+		define('BASEURL', '/ipvl/'); //Descomentar para usar em localhost
 		// define('BASEURL', '/'); //Descomentar qnd upar no server real 
 
 
@@ -43,7 +43,7 @@
 	
 	
 	define('HEADER_TEMPLATE_ADM', ABSPATH . 'assets/inc/adm/header_adm.php');
-	// define('MENU_TEMPLATE_ADM', ABSPATH . 'assets/inc/adm/menu_adm.php');
+	define('MENU_TEMPLATE_ADM', ABSPATH . 'assets/inc/adm/menu_adm.php');
 	define('FOOTER_TEMPLATE_ADM', ABSPATH . 'assets/inc/adm/footer_adm.php');
 	define('AREA_ADM_TEMPLATE_ADM', ABSPATH . 'assets/inc/adm/area_adm.php');
 	define('OFF_TEMPLATE_ADM', ABSPATH . 'assets/inc/adm/off_adm.php');

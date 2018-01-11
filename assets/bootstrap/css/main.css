@@ -157,8 +157,10 @@
 	height: ;
 }
 
+/* configuração menu_adm */
 
-/* configurações do menu com foto*/
+
+/* configurações do menu_global com foto*/
 header {
 	background-image: url(../../img/header.jpeg);
 	background-repeat: no-repeat;
