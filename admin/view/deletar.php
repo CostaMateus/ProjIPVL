@@ -162,4 +162,10 @@
 			</div>
 			<!-- fim modal confirmDelete -->
 			
-<?php 		include(OFF_TEMPLATE_ADM); ?>		</section>		<!-- fim section de modais --><?php 	include(FOOTER_TEMPLATE_ADM); ?>
+<?php 		include(OFF_TEMPLATE_ADM); ?>		</section>		<!-- fim section de modais -->
+		
+		<script type="text/javascript" >
+			$(document).ready(function() {
+				$('#collapseLogged').addClass("in");
+			});
+		</script><?php 	include(FOOTER_TEMPLATE_ADM); ?>

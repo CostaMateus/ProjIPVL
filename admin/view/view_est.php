@@ -325,6 +325,12 @@
 			?>
 		</section>
 		<!-- fim modais section -->
+		
+		<script type="text/javascript" >
+			$(document).ready(function() {
+				$('#collapseEstu').addClass("in");
+			});
+		</script>
 <?php 
 	include(FOOTER_TEMPLATE_ADM); 
 ?>

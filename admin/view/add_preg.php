@@ -102,6 +102,12 @@
 			?>
 		</section>
 		<!-- fim section de modais -->
+		
+		<script type="text/javascript" >
+			$(document).ready(function() {
+				$('#collapsePreg').addClass("in");
+			});
+		</script>
 <?php 
 	include(FOOTER_TEMPLATE_ADM); 
 ?>

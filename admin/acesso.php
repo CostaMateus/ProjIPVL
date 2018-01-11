@@ -91,7 +91,7 @@
 								<input type="hidden" name="idU" value="<?=$_GET['id'];?>">
 								<input type="hidden" name="status" value="1">
 								<div class="form-group <?=(isset($senhaInv2) ? "has-error" : "");?>">
-									<input type="password" class="form-control" id="inputLogin" placeholder="Senha" 
+									<input type="password" class="form-control" id="inputLogin" placeholder="Nova senha" 
 										name="pass1" value="" required autofocus >
 								</div>
 								<div class="form-group <?=(isset($senhaInv2) ? "has-error" : "");?>">
